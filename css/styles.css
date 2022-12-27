@@ -199,7 +199,7 @@ body{
     letter-spacing: 0.04em;
     cursor: pointer;
 
-    transition: color var(--duration-timing);
+    transition: background-color var(--duration-timing), color var(--duration-timing), box-shadow var(--duration-timing);
 }
 .hero-button:hover,
 .hero-button:focus{
@@ -352,10 +352,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: background-color var(--duration-timing)
 }
 .team-icon{
     width: 16px;
     height: 16px;
+}
+.team-icons:hover,
+.team-icons:focus{
+    background-color: var(--background-color-button);
 }
 .section-customers{
     padding-top: 120px;
@@ -376,7 +382,6 @@ body{
     gap: var(--gap24);
 }
 .customers-icon{
-    fill: var(--customers-icon);
     height: 88px;
     width: 168px;
     border: 1px solid var(--customers-icon);
@@ -385,18 +390,26 @@ body{
     align-items: center;
     justify-content: center;
 
-    transition: color var(--duration-timing);
+    transition: border var(--duration-timing);
+
     
 }
 .customers-icons{
+    fill: var(--customers-icon);
     width: 104px;
     height: 56px;
+
+    transition: fill var(--duration-timing);
 }
 .customers-icon:hover,
 .customers-icon:focus{
-    fill: var(--background-color-button);
-    border: 1px solid var(--logo)
+    border: 1px solid var(--background-color-button);
 }
+.customers-icons:hover,
+.customers-icons:focus{
+    fill: var(--background-color-button);
+}
+
 .list-btn{
     margin-bottom: 72px;
     display: flex;
@@ -423,7 +436,8 @@ body{
     cursor: pointer;
     text-align: center;
 
-    transition: color var(--duration-timing);
+    transition: background-color var(--duration-timing),
+    color var(--duration-timing), box-shadow var(--duration-timing);
 }
 .btn:hover,
 .btn:focus{
@@ -445,7 +459,7 @@ body{
     padding-left: 16px;
 }
 .item{
-    transition: color var(--duration-timing);
+    transition: box-shadow var(--duration-timing);
 }
 .item:hover,
 .item:focus{
@@ -558,7 +572,7 @@ body{
     background-color:  rgba(255, 255, 255, 0.1);;
     border-radius: 50%;
 
-    transition: color var(--duration-timing);
+    transition: background-color var(--duration-timing);
     
 }
 .footer-icon{
@@ -620,7 +634,7 @@ body{
     position: absolute;
     top: 24px;
     right: 24px;
-    transition: fill var(--duration-timing);
+    transition: color var(--duration-timing), backround-color var(--duration-timing);
     
 }
 .modal-btn:hover,
